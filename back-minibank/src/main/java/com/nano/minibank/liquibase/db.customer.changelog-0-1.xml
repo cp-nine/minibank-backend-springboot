@@ -1,0 +1,30 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="customer.0.1-1" author="Ikhsan Fauji">
+        <createTable tableName="tb_customer">
+            <column name="customer_number" type="varchar(8)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="f_name" type="varchar(50)"/>
+            <column name="l_name" type="varchar(50)"/>
+            <column name="place_ob" type="varchar(50)"/>
+            <column name="brith_date" type="varchar(50)"/>
+            <column name="gender" type="varchar(50)"/>
+            <column name="address" type="varchar(50)"/>
+            <column name="job" type="varchar(50)"/>
+            <column name="range_salary" type="varchar(50)"/>
+            <column name="phone_number" type="varchar(50)"/>
+            <column name="email" type="varchar(50)"/>
+            <column name="username" type="varchar(50)"/>
+            <column name="password" type="varchar(50)"/>
+            <column name="created_at" type="TIMESTAMP"/>
+            <column name="updated_at" type="TIMESTAMP"/>
+            <column name="flag_delete" type="INT"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
